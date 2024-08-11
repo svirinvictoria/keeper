@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  max-width: 100vw;
+}
+
+body {
+/* background-color: #5c008a; */
+background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  background-color: #eee;
+  /* padding: 0 16px; */
+  max-width: 100vw;
+  
+}
+.main-box{
+  max-width: 100vw;
+}
+.header-main{
+ width: 100vw;
+  margin: 0;
+}
+.header-text {
+  background-color: #f5ba13;
+  
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 99%;
+  height: 2.5rem;
+}
+
+.footer-text{
+  color: #65616196;
+  width: 100%;
+  font-size: 90%;
+}
+.note {
+  background: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: 2rem auto 1.2rem auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  /* height: 40vh; */
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+/* /////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 900px ) {
+  body{
+    font-size: 90%;
+  }
+  header h1{margin-right: -10px;}
+}  
+
+/* /////////////////////////////////////////////////////// */
+@media only screen and (max-width: 600px ) {
+  body{font-size: 80%;  }
+  header{margin-right: -100px;}
+  .note{float: none; margin: 1rem auto; min-height: 15vh; }
+  form.create-note {width: 80vw; min-height: 10vh;}
+  .footer-text{display: flex; flex-direction: column; font-size: 70%;}
+}
+@media only screen and (max-width: 400px ){
+  body{font-size: 80%;}
+  form.create-note {width: 90vw;}
+  
+  .footer-text{font-size: 100%;}
+}
